@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Introduction - Knowzilla</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: #1a202c;
+            padding-top: 20px;
+            overflow-y: auto;
+        }
+        .sidebar a {
+            display: block;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+        }
+        .sidebar a:hover {
+            background: #2d3748;
+        }
+        .content {
+            margin-left: 270px;
+            padding: 20px;
+        }
+        .glow-on-hover:hover {
+            box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+<body class="font-roboto bg-black text-gray-200">
+    <div class="sidebar">
+        <h2 class="text-white text-center text-2xl mb-4">Navigation</h2>
+        <a href="#introduction">Introduction</a>
+        <a href="#why-learn-html">Why Learn HTML?</a>
+        <a href="#html-basics">HTML Basics</a>
+        <a href="#html-features">HTML Features</a>
+        <a href="#quiz">HTML Quiz</a>
+        <a href="#reference">Reference PPTs</a>
+        <a href="#test">Tests</a>
+    </div>
+    <div class="content">
+        <header class="bg-gray-900 text-white p-4 shadow-lg">
+            <div class="container mx-auto flex justify-between items-center">
+                <h1 class="text-3xl font-bold">KNOWZILLA <a href="index.html"></a>
+                <a href="index.html"><img src="logo.png" width="30" height="20" alt="Logo"></a>
+                </h1>
+                <nav>
+                    <ul class="flex space-x-6">
+                        <li><a class="hover:underline" href="index.html">Home</a></li>
+                        <li><a class="hover:underline" href="references.html">References</a></li>
+                        <li><a class="hover:underline" href="about.html">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="container mx-auto mt-8 p-6 bg-gray-900 shadow-lg rounded-lg">
+            <section id="introduction">
+                <h2 class="text-4xl font-bold mb-4 text-gray-100">Introduction to HTML</h2>
+                <p class="text-lg mb-6 text-gray-300">
+                    HTML (HyperText Markup Language) is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS) and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web.
+                   </p>
+                   <p class="text-lg mb-6 text-gray-300">
+                    HTML was created by Tim Berners-Lee in late 1991 but "HTML 2.0" was the first standard HTML specification which was published in 1995. HTML is a simple and flexible language that is easy to learn and use.
+                   </p>
+                   <img alt="Illustration of HTML elements and structure with HTML logo" class="mx-auto mb-6 rounded-lg shadow-md" height="400" src="https://storage.googleapis.com/a1aa/image/bmDoXNsOYR7yVzdipyGIOexdfw41J-Z5xT4RZFBcF7A.jpg" width="600"/>
+            </section>
+            <br>
+
+
+            <section id="why-learn-html">
+                <h3 class="text-3xl font-bold mb-4 text-gray-100">Why Learn HTML?</h3>
+                <ul class="list-disc list-inside mb-6 text-gray-300">
+                    <li>
+                        HTML is the foundation of all web pages. Without HTML, you wouldn't be able to create web pages.
+                       </li>
+                       <li>
+                        It is easy to learn and use.
+                       </li>
+                       <li>
+                        HTML is supported by all browsers.
+                       </li>
+                       <li>
+                        It is free and open-source.
+                       </li>
+                       <li>
+                        HTML is used to structure content on the web.
+                       </li>
+                       <li>
+                        It is the first step in learning web development.
+                       </li>
+                       <li>
+                        HTML is essential for creating accessible web content.
+                       </li>
+                </ul>
+            </section>
+            <br>
+
+
+            <section id="html-basics">
+                <h3 class="text-3xl font-bold mb-4 text-gray-100">HTML Basics</h3>
+
+<div class="bg-gray-800 p-6 rounded-lg mb-6 shadow-inner">
+     <h4 class="text-2xl font-bold mb-2 text-gray-100">
+      Basic HTML Structure
+     </h4>
+     <pre class="bg-gray-900 text-white p-4 rounded-lg overflow-auto">
+<code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"/&gt;
+    &lt;meta content="width=device-width, initial-scale=1.0" name="viewport"/&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code>
+     </pre>
+    </div>
+    <div class="bg-gray-800 p-6 rounded-lg mb-6 shadow-inner">
+     <h4 class="text-2xl font-bold mb-2 text-gray-100">
+      Simple Paragraph Example
+     </h4>
+     <pre class="bg-gray-900 text-white p-4 rounded-lg overflow-auto">
+<code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"/&gt;
+    &lt;meta content="width=device-width, initial-scale=1.0" name="viewport"/&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;This is a simple paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code>
+     </pre>
+    </div>
+    <div class="bg-gray-800 p-6 rounded-lg mb-6 shadow-inner">
+     <h4 class="text-2xl font-bold mb-2 text-gray-100">
+      Simple List Example
+     </h4>
+     <pre class="bg-gray-900 text-white p-4 rounded-lg overflow-auto">
+<code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"/&gt;
+    &lt;meta content="width=device-width, initial-scale=1.0" name="viewport"/&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Item 1&lt;/li&gt;
+        &lt;li&gt;Item 2&lt;/li&gt;
+        &lt;li&gt;Item 3&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code>
+     </pre>
+    </div>
+   </section>
+   <br>
+
+
+   <section id="html-features">
+    <h3 class="text-3xl font-bold mb-4 text-gray-100"> HTML Features</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-gray-800 p-6 rounded-lg shadow-inner">
+         <h4 class="text-2xl font-bold mb-2 text-gray-100">
+          Semantic Elements
+         </h4>
+         <p class="text-gray-300">
+          HTML5 introduced semantic elements that clearly describe their meaning in a human- and machine-readable way.
+         </p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-inner">
+         <h4 class="text-2xl font-bold mb-2 text-gray-100">
+          Multimedia Support
+         </h4>
+         <p class="text-gray-300">
+          HTML supports multimedia elements like audio and video, making it easier to embed media content.
+         </p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-inner">
+         <h4 class="text-2xl font-bold mb-2 text-gray-100">
+          Forms and Input
+         </h4>
+         <p class="text-gray-300">
+          HTML provides a wide range of form elements and input types to create interactive forms.
+         </p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-inner">
+         <h4 class="text-2xl font-bold mb-2 text-gray-100">
+          Accessibility
+         </h4>
+         <p class="text-gray-300">
+          HTML includes features that help create accessible web content for users with disabilities.
+         </p>
+        </div>
+       </div>
+      </section>
+      <br>
+
+      
+   <section id="quiz">
+    <h3 class="text-3xl font-bold mb-4 text-gray-100"> Quiz: Test Your HTML Knowledge</h3>
+    <div class="bg-gray-800 p-6 rounded-lg mb-6 shadow-inner">
+        <h4 class="text-2xl font-bold mb-2 text-gray-100">
+         Sample Questions
+        </h4>
+        <ul class="list-decimal list-inside text-gray-300">
+         <li class="mb-4">
+          <p class="font-bold">
+           What does HTML stand for?
+          </p>
+          <ul class="list-disc list-inside ml-6">
+           <li>
+            <input id="q1a" name="q1" type="radio"/>
+            <label for="q1a">
+             HyperText Markup Language
+            </label>
+           </li>
+           <li>
+            <input id="q1b" name="q1" type="radio"/>
+            <label for="q1b">
+             Hyperlinks and Text Markup Language
+            </label>
+           </li>
+           <li>
+            <input id="q1c" name="q1" type="radio"/>
+            <label for="q1c">
+             Home Tool Markup Language
+            </label>
+           </li>
+           <li>
+            <input id="q1d" name="q1" type="radio"/>
+            <label for="q1d">
+             Hyperlinking Text Markup Language
+            </label>
+           </li>
+          </ul>
+         </li>
+         <li class="mb-4">
+          <p class="font-bold">
+           Which HTML element is used to define the title of a document?
+          </p>
+          <ul class="list-disc list-inside ml-6">
+           <li>
+            <input id="q2a" name="q2" type="radio"/>
+            <label for="q2a">
+             &lt;title&gt;
+            </label>
+           </li>
+           <li>
+            <input id="q2b" name="q2" type="radio"/>
+            <label for="q2b">
+             &lt;head&gt;
+            </label>
+           </li>
+           <li>
+            <input id="q2c" name="q2" type="radio"/>
+            <label for="q2c">
+             &lt;meta&gt;
+            </label>
+           </li>
+           <li>
+            <input id="q2d" name="q2" type="radio"/>
+            <label for="q2d">
+             &lt;body&gt;
+            </label>
+           </li>
+          </ul>
+         </li>
+         <li class="mb-4">
+          <p class="font-bold">
+           What is the correct HTML element for inserting a line break?
+          </p>
+          <ul class="list-disc list-inside ml-6">
+           <li>
+            <input id="q3a" name="q3" type="radio"/>
+            <label for="q3a">
+             &lt;br&gt;
+            </label>
+           </li>
+           <li>
+            <input id="q3b" name="q3" type="radio"/>
+            <label for="q3b">
+             &lt;lb&gt;
+            </label>
+           </li>
+           <li>
+            <input id="q3c" name="q3" type="radio"/>
+            <label for="q3c">
+             &lt;break&gt;
+            </label>
+           </li>
+           <li>
+            <input id="q3d" name="q3" type="radio"/>
+            <label for="q3d">
+             &lt;line&gt;
+            </label>
+           </li>
+          </ul>
+         </li>
+         <li class="mb-4">
+          <p class="font-bold">
+           Which HTML element is used to define important text?
+          </p>
+          <ul class="list-disc list-inside ml-6">
+           <li>
+            <input id="q4a" name="q4" type="radio"/>
+            <label for="q4a">
+             &lt;strong&gt;
+            </label>
+           </li>
+           <li>
+            <input id="q4b" name="q4" type="radio"/>
+            <label for="q4b">
+             &lt;important&gt;
+            </label>
+           </li>
+           <li>
+            <input id="q4c" name="q4" type="radio"/>
+            <label for="q4c">
+             &lt;em&gt;
+            </label>
+           </li>
+           <li>
+            <input id="q4d" name="q4" type="radio"/>
+            <label for="q4d">
+             &lt;imp&gt;
+            </label>
+           </li>
+          </ul>
+         </li>
+         <li class="mb-4">
+          <p class="font-bold">
+           Which HTML element is used to define emphasized text?
+          </p>
+          <ul class="list-disc list-inside ml-6">
+           <li>
+            <input id="q5a" name="q5" type="radio"/>
+            <label for="q5a">
+             &lt;em&gt;
+            </label>
+           </li>
+           <li>
+            <input id="q5b" name="q5" type="radio"/>
+            <label for="q5b">
+             &lt;i&gt;
+            </label>
+           </li>
+           <li>
+            <input id="q5c" name="q5" type="radio"/>
+            <label for="q5c">
+             &lt;italic&gt;
+            </label>
+           </li>
+           <li>
+            <input id="q5d" name="q5" type="radio"/>
+            <label for="q5d">
+             &lt;emphasis&gt;
+            </label>
+           </li>
+          </ul>
+         </li>
+        </ul>
+       </div>
+      </section>
+
+      <br>
+
+      <section id="reference">
+        <h3 class="text-3xl font-bold mb-4 text-gray-100"> References</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-gray-800 p-6 rounded-lg shadow-inner glow-on-hover transition duration-300 ease-in-out transform hover:scale-105">
+             <h4 class="text-2xl font-bold mb-2 text-gray-100">
+              HTML Basics
+             </h4>
+             <p class="text-gray-300">
+              A comprehensive guide to understanding the basics of HTML.
+             </p>
+             <a class="text-blue-400 hover:underline mt-4 block" href="knowzilla(html).pptx">
+              Download PPT
+             </a>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-inner glow-on-hover transition duration-300 ease-in-out transform hover:scale-105">
+             <h4 class="text-2xl font-bold mb-2 text-gray-100">
+              Advanced HTML
+             </h4>
+             <p class="text-gray-300">
+              Dive deeper into advanced HTML concepts and techniques.
+             </p>
+             <a class="text-blue-400 hover:underline mt-4 block" href="#">
+              Download PPT
+             </a>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-inner glow-on-hover transition duration-300 ease-in-out transform hover:scale-105">
+             <h4 class="text-2xl font-bold mb-2 text-gray-100">
+              HTML5 Features
+             </h4>
+             <p class="text-gray-300">
+              Learn about new features introduced in HTML5.
+             </p>
+             <a class="text-blue-400 hover:underline mt-4 block" href="#">
+              Download PPT
+             </a>
+            </div>
+           </div>
+          </section>
+
+          <br>
+
+          <section id="test">
+            <h3 class="text-3xl font-bold mb-4 text-gray-100"> Tests</h3>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-inner glow-on-hover transition duration-300 ease-in-out transform hover:scale-105 text-center">
+                <a class="text-2xl font-bold text-gray-100 hover:underline" href="htmlquiz.html">
+                 TEST 1 
+                </a>
+               </div>
+           <br>
+               <div class="bg-gray-800 p-6 rounded-lg shadow-inner glow-on-hover transition duration-300 ease-in-out transform hover:scale-105 text-center">
+                   <a class="text-2xl font-bold text-gray-100 hover:underline" href="htmlquiz1.html">
+                    TEST 2
+                   </a>
+                  </div>
+              </section>
+
+
+        </main>
+        <footer class="bg-gray-900 text-white p-4 mt-8 shadow-lg">
+            <div class="container mx-auto text-center py-8">
+                <p>© 2025 Knowzilla. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

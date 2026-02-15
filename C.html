@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Language Introduction - Knowzilla</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: #1a202c;
+            padding-top: 20px;
+            overflow-y: auto;
+        }
+        .sidebar a {
+            display: block;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+        }
+        .sidebar a:hover {
+            background: #2d3748;
+        }
+        .content {
+            margin-left: 270px;
+            padding: 20px;
+        }
+        .glow-on-hover:hover {
+     box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.5);
+   }
+    </style>
+</head>
+<body class="font-roboto bg-black text-gray-200">
+    
+    <div class="sidebar">
+        <h2 class="text-white text-center text-2xl mb-4">Navigation</h2>
+        <a href="#introduction">Introduction</a>
+        <a href="#why-learn-c">Why Learn C?</a>
+        <a href="#c-basics">C Basics</a>
+        <a href="#c-features">C Features</a>
+        <a href="#quiz">C Quiz</a>
+        <a href="#reference">Reference PPTs</a>
+        <a href="#test">Tests</a>
+    </div>
+
+    <div class="content">
+        <header class="bg-gray-900 text-white p-4 shadow-lg">
+            <div class="container mx-auto flex justify-between items-center">
+                <h1 class="text-3xl font-bold">
+                    KNOWZILLA <a href="index.html"></a>
+                    <a href="index.html"><img src="logo.png" width="30" height="20" alt="Logo"></a>
+                </h1>
+                <nav>
+                    <ul class="flex space-x-6">
+                        <li><a class="hover:underline" href="index.html">Home</a></li>
+                        <li><a class="hover:underline" href="references.html">References</a></li>
+                        <li><a class="hover:underline" href="about.html">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="container mx-auto mt-8 p-6 bg-gray-900 shadow-lg rounded-lg">
+            <section id="introduction">
+                <h2 class="text-4xl font-bold mb-4 text-gray-100">Introduction to C Language</h2>
+                <p class="text-lg mb-6 text-gray-300">C is a general-purpose, procedural computer programming language...</p>
+                <img class="mx-auto mb-6 rounded-lg shadow-md" height="400" src="https://storage.googleapis.com/a1aa/image/TreWpM23OyqB0eudSp4EWdXdsJFothbWvrDvxctlkLI.jpg" width="600"/>
+            </section>
+
+            <section id="why-learn-c">
+                <h3 class="text-3xl font-bold mb-4 text-gray-100">Why Learn C?</h3>
+                <ul class="list-disc list-inside mb-6 text-gray-300">
+                    <li>C is widely used worldwide.</li>
+                    <li>It is efficient and highly portable.</li>
+                    <li>It provides low-level memory access.</li>
+                </ul>
+            </section>
+
+            <section id="c-basics">
+                <h3 class="text-3xl font-bold mb-4 text-gray-100">C Basics</h3>
+                <pre class="bg-gray-900 text-white p-4 rounded-lg overflow-auto">
+<code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    printf("Hello, World!");
+    return 0;
+}
+</code>
+                </pre>
+                <div class="bg-gray-800 p-6 rounded-lg mb-6 shadow-inner">
+                    <h4 class="text-2xl font-bold mb-2 text-gray-100">
+                     Simple Addition Example
+                    </h4>
+                    <pre class="bg-gray-900 text-white p-4 rounded-lg overflow-auto">
+               <code>
+               #include &lt;stdio.h&gt;
+               
+               int main() {
+                   int num1 = 5;
+                   int num2 = 10;
+                   int sum = num1 + num2;
+                   printf("The sum is: %d", sum);
+                   return 0;
+               }
+               </code>
+                               </pre>
+                   </div>
+                   <div class="bg-gray-800 p-6 rounded-lg mb-6 shadow-inner">
+                    <h4 class="text-2xl font-bold mb-2 text-gray-100">
+                     Simple Loop Example
+                    </h4>
+                    <pre class="bg-gray-900 text-white p-4 rounded-lg overflow-auto">
+               <code>
+               #include &lt;stdio.h&gt;
+               
+               int main() {
+                   for (int i = 1; i &lt;= 5; i++) {
+                       printf("Count: %d\n", i);
+                   }
+                   return 0;
+               }
+               </code>
+                               </pre>
+                   </div>
+            </section>
+
+            <section id="c-features">
+                <h3 class="text-3xl font-bold mb-4 text-gray-100">C Features</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-inner">
+                        <h4 class="text-2xl font-bold mb-2 text-gray-100">Procedural Language</h4>
+                        <p class="text-gray-300">
+                            C is a procedural programming language, which means it follows a sequence of steps to achieve a desired outcome.
+                           </p>
+                          </div>
+                          <div class="bg-gray-800 p-6 rounded-lg shadow-inner">
+                           <h4 class="text-2xl font-bold mb-2 text-gray-100">
+                            Low-Level Access
+                           </h4>
+                           <p class="text-gray-300">
+                            C provides low-level access to memory and system resources, making it ideal for system programming.
+                           </p>
+                          </div>
+                          <div class="bg-gray-800 p-6 rounded-lg shadow-inner">
+                           <h4 class="text-2xl font-bold mb-2 text-gray-100">
+                            Portability
+                           </h4>
+                           <p class="text-gray-300">
+                            C code is highly portable and can be run on various platforms with minimal changes.
+                           </p>
+                          </div>
+                          <div class="bg-gray-800 p-6 rounded-lg shadow-inner">
+                           <h4 class="text-2xl font-bold mb-2 text-gray-100">
+                            Efficiency
+                           </h4>
+                           <p class="text-gray-300">
+                            C is known for its performance and efficiency, making it suitable for high-performance applications.
+                           </p>
+                    </div>
+                </div>
+            </section><br>
+
+            <section id="quiz">
+                <h3 class="text-3xl font-bold mb-4 text-gray-100">
+                    Sample Quiz Questions
+                   </h3>
+                   <div class="bg-gray-800 p-6 rounded-lg mb-6 shadow-inner">
+                    <h4 class="text-2xl font-bold mb-2 text-gray-100">
+                     Sample Questions
+                    </h4>
+                    <ul class="list-decimal list-inside text-gray-300">
+                     <li class="mb-4">
+                      <p class="font-bold">
+                       What is the correct syntax for the main function in C?
+                      </p>
+                      <ul class="list-disc list-inside ml-6">
+                       <li>
+                        <input id="q1a" name="q1" type="radio"/>
+                        <label for="q1a">
+                         int main()
+                        </label>
+                       </li>
+                       <li>
+                        <input id="q1b" name="q1" type="radio"/>
+                        <label for="q1b">
+                         void main()
+                        </label>
+                       </li>
+                       <li>
+                        <input id="q1c" name="q1" type="radio"/>
+                        <label for="q1c">
+                         main()
+                        </label>
+                       </li>
+                       <li>
+                        <input id="q1d" name="q1" type="radio"/>
+                        <label for="q1d">
+                         int main(void)
+                        </label>
+                       </li>
+                      </ul>
+                     </li>
+                     <li class="mb-4">
+                      <p class="font-bold">
+                       Which of the following is not a C keyword?
+                      </p>
+                      <ul class="list-disc list-inside ml-6">
+                       <li>
+                        <input id="q2a" name="q2" type="radio"/>
+                        <label for="q2a">
+                         int
+                        </label>
+                       </li>
+                       <li>
+                        <input id="q2b" name="q2" type="radio"/>
+                        <label for="q2b">
+                         float
+                        </label>
+                       </li>
+                       <li>
+                        <input id="q2c" name="q2" type="radio"/>
+                        <label for="q2c">
+                         double
+                        </label>
+                       </li>
+                       <li>
+                        <input id="q2d" name="q2" type="radio"/>
+                        <label for="q2d">
+                         string
+                        </label>
+                       </li>
+                      </ul>
+                     </li>
+                     <li class="mb-4">
+                      <p class="font-bold">
+                       What is the output of the following code?
+                      </p>
+                      <pre class="bg-gray-900 text-white p-4 rounded-lg overflow-auto mb-2">
+               <code>
+               #include &lt;stdio.h&gt;
+               
+               int main() {
+                   int x = 5;
+                   int y = 10;
+                   printf("%d", x + y);
+                   return 0;
+               }
+               </code>
+                               </pre>
+                      <ul class="list-disc list-inside ml-6">
+                       <li>
+                        <input id="q3a" name="q3" type="radio"/>
+                        <label for="q3a">
+                         15
+                        </label>
+                       </li>
+                       <li>
+                        <input id="q3b" name="q3" type="radio"/>
+                        <label for="q3b">
+                         510
+                        </label>
+                       </li>
+                       <li>
+                        <input id="q3c" name="q3" type="radio"/>
+                        <label for="q3c">
+                         5 10
+                        </label>
+                       </li>
+                       <li>
+                        <input id="q3d" name="q3" type="radio"/>
+                        <label for="q3d">
+                         Error
+                        </label>
+                       </li>
+                      </ul>
+                     </li>
+                     <li class="mb-4">
+                      <p class="font-bold">
+                       Which of the following is used to create a variable in C?
+                      </p>
+                      <ul class="list-disc list-inside ml-6">
+                       <li>
+                        <input id="q4a" name="q4" type="radio"/>
+                        <label for="q4a">
+                         int
+                        </label>
+                       </li>
+                       <li>
+                        <input id="q4b" name="q4" type="radio"/>
+                        <label for="q4b">
+                         float
+                        </label>
+                       </li>
+                       <li>
+                        <input id="q4c" name="q4" type="radio"/>
+                        <label for="q4c">
+                         char
+                        </label>
+                       </li>
+                       <li>
+                        <input id="q4d" name="q4" type="radio"/>
+                        <label for="q4d">
+                         All of the above
+                        </label>
+                       </li>
+                      </ul>
+                     </li>
+                     <li class="mb-4">
+                      <p class="font-bold">
+                       What is the size of an int variable in C?
+                      </p>
+                      <ul class="list-disc list-inside ml-6">
+                       <li>
+                        <input id="q5a" name="q5" type="radio"/>
+                        <label for="q5a">
+                         8 bits
+                        </label>
+                       </li>
+                       <li>
+                        <input id="q5b" name="q5" type="radio"/>
+                        <label for="q5b">
+                         16 bits
+                        </label>
+                       </li>
+                       <li>
+                        <input id="q5c" name="q5" type="radio"/>
+                        <label for="q5c">
+                         32 bits
+                        </label>
+                       </li>
+                       <li>
+                        <input id="q5d" name="q5" type="radio"/>
+                        <label for="q5d">
+                         64 bits
+                        </label>
+                       </li>
+                      </ul>
+                     </li>
+                    </ul>
+                   </div>
+            </section>
+
+            <section id="reference">
+                <h3 class="text-3xl font-bold mb-4 text-gray-100">
+                    Reference PPTs
+                   </h3>
+                   <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-inner glow-on-hover transition duration-300 ease-in-out transform hover:scale-105">
+                     <h4 class="text-2xl font-bold mb-2 text-gray-100">
+                      C Basics
+                     </h4>
+                     <p class="text-gray-300">
+                      A comprehensive guide to understanding the basics of C programming.
+                     </p>
+                     <a class="text-blue-400 hover:underline mt-4 block" href="#">
+                      Download PPT
+                     </a>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-inner glow-on-hover transition duration-300 ease-in-out transform hover:scale-105">
+                     <h4 class="text-2xl font-bold mb-2 text-gray-100">
+                      Advanced C
+                     </h4>
+                     <p class="text-gray-300">
+                      Dive deeper into advanced C concepts and techniques.
+                     </p>
+                     <a class="text-blue-400 hover:underline mt-4 block" href="#">
+                      Download PPT
+                     </a>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-inner glow-on-hover transition duration-300 ease-in-out transform hover:scale-105">
+                     <h4 class="text-2xl font-bold mb-2 text-gray-100">
+                      C Libraries
+                     </h4>
+                     <p class="text-gray-300">
+                      Learn about popular C libraries and how to use them.
+                     </p>
+                     <a class="text-blue-400 hover:underline mt-4 block" href="#">
+                      Download PPT
+                     </a>
+                    </div>
+                   </div>
+            </section>
+            <br>
+
+            <section id="test">
+                <div class="bg-gray-800 p-6 rounded-lg shadow-inner glow-on-hover transition duration-300 ease-in-out transform hover:scale-105 text-center">
+                    <a class="text-2xl font-bold text-gray-100 hover:underline" href="cquiz.html">
+                     TEST 1
+                    </a>
+                   </div>
+               
+               <br>
+                   
+                   <div class="bg-gray-800 p-6 rounded-lg shadow-inner glow-on-hover transition duration-300 ease-in-out transform hover:scale-105 text-center">
+                       <a class="text-2xl font-bold text-gray-100 hover:underline" href="cquiz1.html">
+                        TEST 2
+                       </a>
+                      </div>
+            </section>
+        </main>
+
+        <footer class="bg-gray-900 text-white p-4 mt-8 shadow-lg">
+            <div class="container mx-auto text-center py-8">
+                <p>© 2025 Knowzilla. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

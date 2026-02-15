@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Introduction - Knowzilla</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: #1a202c;
+            padding-top: 20px;
+            overflow-y: auto;
+        }
+        .sidebar a {
+            display: block;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+        }
+        .sidebar a:hover {
+            background: #2d3748;
+        }
+        .content {
+            margin-left: 270px;
+            padding: 20px;
+        }
+        .glow-on-hover:hover {
+     box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.5);
+   }
+    </style>
+</head>
+<body class="font-roboto bg-black text-gray-200">
+    <div class="sidebar">
+        <h2 class="text-white text-center text-2xl mb-4">Navigation</h2>
+        <a href="#introduction">Introduction</a>
+        <a href="#why-learn-python">Why Learn Python?</a>
+        <a href="#python-basics">Python Basics</a>
+        <a href="#python-features">Python Features</a>
+        <a href="#quiz">Python Quiz</a>
+        <a href="#reference">Reference PPTs</a>
+        <a href="#test">Tests</a>
+    </div>
+    <div class="content">
+        <header class="bg-gray-900 text-white p-4 shadow-lg">
+            <div class="container mx-auto flex justify-between items-center">
+                <h1 class="text-3xl font-bold">KNOWZILLA <a href="index.html"></a>
+                <a href="index.html"><img src="logo.png" width="30" height="20" alt="Logo"></a>
+                </h1>
+                <nav>
+                    <ul class="flex space-x-6">
+                        <li><a class="hover:underline" href="index.html">Home</a></li>
+                        <li><a class="hover:underline" href="references.html">References</a></li>
+                        <li><a class="hover:underline" href="about.html">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="container mx-auto mt-8 p-6 bg-gray-900 shadow-lg rounded-lg">
+            <section id="introduction">
+                <h2 class="text-4xl font-bold mb-4 text-gray-100">Introduction to Python</h2>
+                <p class="text-lg mb-6 text-gray-300">
+                    Python is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python's design philosophy emphasizes code readability with its notable use of significant whitespace.
+                   </p>
+                   <p class="text-lg mb-6 text-gray-300">
+                    Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly, procedural), object-oriented, and functional programming. Python is often described as a "batteries included" language due to its comprehensive standard library.
+                   </p>
+                   <img alt="Illustration of Python programming language with code snippets and Python logo" class="mx-auto mb-6 rounded-lg shadow-md" height="400" src="https://storage.googleapis.com/a1aa/image/gImZBFzonqWg_nuPdcAS5G7VAd0Pmmx6avkME7OEf2I.jpg" width="600"/>
+            </section>
+            <br>
+
+
+            <section id="why-learn-python">
+                <h3 class="text-3xl font-bold mb-4 text-gray-100">Why Learn Python?</h3>
+                <ul class="list-disc list-inside mb-6 text-gray-300">
+     <li>
+      Python is one of the most popular programming languages in the world.
+     </li>
+     <li>
+      It is used for developing web applications, data analysis, artificial intelligence, scientific computing, and more.
+     </li>
+     <li>
+      Python has a simple and easy-to-read syntax which makes it a great choice for beginners.
+     </li>
+     <li>
+      It has a vast ecosystem of libraries and frameworks.
+     </li>
+     <li>
+      Python is platform-independent and can run on various operating systems.
+     </li>
+     <li>
+      Python has strong community support and plenty of resources available.
+     </li>
+    </ul>
+            </section>
+            <br>
+
+            <section id="python-basics">
+                <h3 class="text-3xl font-bold mb-4 text-gray-100">Python Basics</h3>
+                <div class="bg-gray-800 p-6 rounded-lg mb-6 shadow-inner">
+                    <h4 class="text-2xl font-bold mb-2 text-gray-100">
+                     Hello World Example
+                    </h4>
+                    <pre class="bg-gray-900 text-white p-4 rounded-lg overflow-auto">
+               <code>
+               print("Hello, World!")
+               </code>
+                               </pre>
+                   </div>
+                   <div class="bg-gray-800 p-6 rounded-lg mb-6 shadow-inner">
+                    <h4 class="text-2xl font-bold mb-2 text-gray-100">
+                     Simple Addition Example
+                    </h4>
+                    <pre class="bg-gray-900 text-white p-4 rounded-lg overflow-auto">
+               <code>
+               num1 = 5
+               num2 = 10
+               sum = num1 + num2
+               print("The sum is:", sum)
+               </code>
+                               </pre>
+                   </div>
+                   <div class="bg-gray-800 p-6 rounded-lg mb-6 shadow-inner">
+                    <h4 class="text-2xl font-bold mb-2 text-gray-100">
+                     Simple Loop Example
+                    </h4>
+                    <pre class="bg-gray-900 text-white p-4 rounded-lg overflow-auto">
+               <code>
+               for i in range(1, 6):
+                   print("Count:", i)
+               </code>
+                               </pre>
+                   </div>
+                  </section>
+                  <br>
+
+
+                  <section id="python-features">
+                    <h3 class="text-3xl font-bold mb-4 text-gray-100">Python Features</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-gray-800 p-6 rounded-lg shadow-inner">
+                         <h4 class="text-2xl font-bold mb-2 text-gray-100">
+                          Easy to Learn and Use
+                         </h4>
+                         <p class="text-gray-300">
+                          Python has a simple syntax that is easy to learn and use, making it a great choice for beginners.
+                         </p>
+                        </div>
+                        <div class="bg-gray-800 p-6 rounded-lg shadow-inner">
+                         <h4 class="text-2xl font-bold mb-2 text-gray-100">
+                          Interpreted Language
+                         </h4>
+                         <p class="text-gray-300">
+                          Python is an interpreted language, which means that code can be executed as soon as it is written.
+                         </p>
+                        </div>
+                        <div class="bg-gray-800 p-6 rounded-lg shadow-inner">
+                         <h4 class="text-2xl font-bold mb-2 text-gray-100">
+                          Versatile
+                         </h4>
+                         <p class="text-gray-300">
+                          Python can be used for a wide range of applications, from web development to data analysis and scientific computing.
+                         </p>
+                        </div>
+                        <div class="bg-gray-800 p-6 rounded-lg shadow-inner">
+                         <h4 class="text-2xl font-bold mb-2 text-gray-100">
+                          Large Standard Library
+                         </h4>
+                         <p class="text-gray-300">
+                          Python comes with a large standard library that includes modules for various tasks, such as file I/O, system calls, and web development.
+                         </p>
+                        </div>
+                       </div>
+                      </section>
+                      <br>
+
+                      <section id="quiz">
+                        <h3 class="text-3xl font-bold mb-4 text-gray-100">Quiz: Test Your Python Knowledge</h3>
+                        <div class="bg-gray-800 p-6 rounded-lg mb-6 shadow-inner">
+                            <h4 class="text-2xl font-bold mb-2 text-gray-100">
+                             Sample Questions
+                            </h4>
+                            <ul class="list-decimal list-inside text-gray-300">
+                             <li class="mb-4">
+                              <p class="font-bold">
+                               What is the correct syntax to output "Hello, World" in Python?
+                              </p>
+                              <ul class="list-disc list-inside ml-6">
+                               <li>
+                                <input id="q1a" name="q1" type="radio"/>
+                                <label for="q1a">
+                                 echo "Hello, World"
+                                </label>
+                               </li>
+                               <li>
+                                <input id="q1b" name="q1" type="radio"/>
+                                <label for="q1b">
+                                 print("Hello, World")
+                                </label>
+                               </li>
+                               <li>
+                                <input id="q1c" name="q1" type="radio"/>
+                                <label for="q1c">
+                                 printf("Hello, World")
+                                </label>
+                               </li>
+                               <li>
+                                <input id="q1d" name="q1" type="radio"/>
+                                <label for="q1d">
+                                 cout &lt;&lt; "Hello, World"
+                                </label>
+                               </li>
+                              </ul>
+                             </li>
+                             <li class="mb-4">
+                              <p class="font-bold">
+                               Which of the following is not a Python keyword?
+                              </p>
+                              <ul class="list-disc list-inside ml-6">
+                               <li>
+                                <input id="q2a" name="q2" type="radio"/>
+                                <label for="q2a">
+                                 def
+                                </label>
+                               </li>
+                               <li>
+                                <input id="q2b" name="q2" type="radio"/>
+                                <label for="q2b">
+                                 class
+                                </label>
+                               </li>
+                               <li>
+                                <input id="q2c" name="q2" type="radio"/>
+                                <label for="q2c">
+                                 return
+                                </label>
+                               </li>
+                               <li>
+                                <input id="q2d" name="q2" type="radio"/>
+                                <label for="q2d">
+                                 include
+                                </label>
+                               </li>
+                              </ul>
+                             </li>
+                             <li class="mb-4">
+                              <p class="font-bold">
+                               What is the output of the following code?
+                              </p>
+                              <pre class="bg-gray-900 text-white p-4 rounded-lg overflow-auto mb-2">
+                       <code>
+                       x = 5
+                       y = 10
+                       print(x + y)
+                       </code>
+                                       </pre>
+                              <ul class="list-disc list-inside ml-6">
+                               <li>
+                                <input id="q3a" name="q3" type="radio"/>
+                                <label for="q3a">
+                                 15
+                                </label>
+                               </li>
+                               <li>
+                                <input id="q3b" name="q3" type="radio"/>
+                                <label for="q3b">
+                                 510
+                                </label>
+                               </li>
+                               <li>
+                                <input id="q3c" name="q3" type="radio"/>
+                                <label for="q3c">
+                                 5 10
+                                </label>
+                               </li>
+                               <li>
+                                <input id="q3d" name="q3" type="radio"/>
+                                <label for="q3d">
+                                 Error
+                                </label>
+                               </li>
+                              </ul>
+                             </li>
+                             <li class="mb-4">
+                              <p class="font-bold">
+                               Which of the following is used to create a function in Python?
+                              </p>
+                              <ul class="list-disc list-inside ml-6">
+                               <li>
+                                <input id="q4a" name="q4" type="radio"/>
+                                <label for="q4a">
+                                 function
+                                </label>
+                               </li>
+                               <li>
+                                <input id="q4b" name="q4" type="radio"/>
+                                <label for="q4b">
+                                 def
+                                </label>
+                               </li>
+                               <li>
+                                <input id="q4c" name="q4" type="radio"/>
+                                <label for="q4c">
+                                 create
+                                </label>
+                               </li>
+                               <li>
+                                <input id="q4d" name="q4" type="radio"/>
+                                <label for="q4d">
+                                 func
+                                </label>
+                               </li>
+                              </ul>
+                             </li>
+                             <li class="mb-4">
+                              <p class="font-bold">
+                               What is the size of an int variable in Python?
+                              </p>
+                              <ul class="list-disc list-inside ml-6">
+                               <li>
+                                <input id="q5a" name="q5" type="radio"/>
+                                <label for="q5a">
+                                 8 bits
+                                </label>
+                               </li>
+                               <li>
+                                <input id="q5b" name="q5" type="radio"/>
+                                <label for="q5b">
+                                 16 bits
+                                </label>
+                               </li>
+                               <li>
+                                <input id="q5c" name="q5" type="radio"/>
+                                <label for="q5c">
+                                 32 bits
+                                </label>
+                               </li>
+                               <li>
+                                <input id="q5d" name="q5" type="radio"/>
+                                <label for="q5d">
+                                 It depends on the value
+                                </label>
+                               </li>
+                              </ul>
+                             </li>
+                            </ul>
+                           </div>
+                          </section>
+                          <br>
+
+                          <section id="reference">
+                            <h3 class="text-3xl font-bold mb-4 text-gray-100">References</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                                <div class="bg-gray-800 p-6 rounded-lg shadow-inner glow-on-hover transition duration-300 ease-in-out transform hover:scale-105">
+                                 <h4 class="text-2xl font-bold mb-2 text-gray-100">
+                                  Python Basics
+                                 </h4>
+                                 <p class="text-gray-300">
+                                  A comprehensive guide to understanding the basics of Python programming.
+                                 </p>
+                                 <a class="text-blue-400 hover:underline mt-4 block" href="knowzilla(python).pptx">
+                                  Download PPT
+                                 </a>
+                                </div>
+                                <div class="bg-gray-800 p-6 rounded-lg shadow-inner glow-on-hover transition duration-300 ease-in-out transform hover:scale-105">
+                                 <h4 class="text-2xl font-bold mb-2 text-gray-100">
+                                  Advanced Python
+                                 </h4>
+                                 <p class="text-gray-300">
+                                  Dive deeper into advanced Python concepts and techniques.
+                                 </p>
+                                 <a class="text-blue-400 hover:underline mt-4 block" href="#">
+                                  Download PPT
+                                 </a>
+                                </div>
+                                <div class="bg-gray-800 p-6 rounded-lg shadow-inner glow-on-hover transition duration-300 ease-in-out transform hover:scale-105">
+                                 <h4 class="text-2xl font-bold mb-2 text-gray-100">
+                                  Python Frameworks
+                                 </h4>
+                                 <p class="text-gray-300">
+                                  Learn about popular Python frameworks and how to use them.
+                                 </p>
+                                 <a class="text-blue-400 hover:underline mt-4 block" href="#">
+                                  Download PPT
+                                 </a>
+                                </div>
+                               </div>
+                              </section>
+                              <br>                            
+
+                              <section id="test">
+                                <h3 class="text-3xl font-bold mb-4 text-gray-100">Tests</h3>
+                                <div class="bg-gray-800 p-6 rounded-lg shadow-inner glow-on-hover transition duration-300 ease-in-out transform hover:scale-105 text-center">
+                                    <a class="text-2xl font-bold text-gray-100 hover:underline" href="pythonquiz.html">
+                                     TEST 1
+                                    </a>
+                                   </div>
+                               <br>
+                                   <div class="bg-gray-800 p-6 rounded-lg shadow-inner glow-on-hover transition duration-300 ease-in-out transform hover:scale-105 text-center">
+                                     <a class="text-2xl font-bold text-gray-100 hover:underline" href="pythonquiz1.html">
+                                     TEST 2
+                                     </a>
+                                    </div>
+                                  </section>
+<br>
+
+
+        </main>
+        <footer class="bg-gray-900 text-white p-4 mt-8 shadow-lg">
+            <div class="container mx-auto text-center py-8">
+                <p>© 2025 Knowzilla. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
