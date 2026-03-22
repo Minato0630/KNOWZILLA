@@ -1,0 +1,67 @@
+{
+  "version": 2,
+  "functions": {
+    "server.js": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/css/**",
+      "destination": "/css/**"
+    },
+    {
+      "source": "/js/**",
+      "destination": "/js/**"
+    },
+    {
+      "source": "/images/**",
+      "destination": "/images/**"
+    },
+    {
+      "source": "/fonts/**",
+      "destination": "/fonts/**"
+    },
+    {
+      "source": "/icon/**",
+      "destination": "/icon/**"
+    },
+    {
+      "source": "/api/**",
+      "destination": "/api"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/server.js"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/css/**",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/js/**",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/images/**",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}
